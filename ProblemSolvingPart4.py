@@ -1,15 +1,17 @@
 # Reversing a string
 
 # def rev_string():
-#     rev_list = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11, -12, -13, -14, -15]
-#     let_input = []
+#     char_list = []
+#     rev_list = []
 #     user_input = input("What word would you like reversed?")
 #     user_len = len(user_input)
-#     for letter in user_input:
-#         let_input.append(letter)
-#     for rev_let in rev_list:
-#         if rev_let >= -(user_len):
-#             print(let_input[rev_let])
+#     neg_len_range = range(-1, -(user_len)-1, -1)
+#     for char in user_input:
+#         char_list.append(char)
+#     for neg_num in neg_len_range:
+#         rev_list.append(char_list[neg_num])
+#     answer = ''.join(rev_list)
+#     print(answer)
 
 # rev_string()
 
@@ -57,21 +59,20 @@
     
 # Palindrome
 
-def palindrome_check():
-    rev_list = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11, -12, -13, -14, -15]
-    let_input = []
-    user_input = input("Let's see if your word is a palindrome! Please enter a word")
-    user_len = len(user_input)
-    for letter in user_input:
-        let_input.append(letter)
-    for rev_let in rev_list:
-        if rev_let >= -(user_len):
-            rev_word_list = let_input[rev_let]
-    rev_word = ''.join(rev_word_list)
-    if user_input == rev_word:
-        print("Its a Palindrome!")
-    else:
-        print("Nope!")
+# def palindrome_check():
+#     char_list = []
+#     rev_list = []
+#     user_input = input("Let's see if your word is a palindrome!")
+#     user_len = len(user_input)
+#     neg_len_range = range(-1, -(user_len)-1, -1)
+#     for char in user_input:
+#         char_list.append(char)
+#     for neg_num in neg_len_range:
+#         rev_list.append(char_list[neg_num])
+#     answer = ''.join(rev_list)
+#     if user_input == answer:
+#         print("It is a palindrome!")
+#     else:
+#         print("Nope")
 
-
-palindrome_check()
+# palindrome_check()
